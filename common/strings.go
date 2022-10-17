@@ -71,3 +71,7 @@ func (s *StringSlice) Join(separator string) *String {
 		value: strings.Join(s.values, separator),
 	}
 }
+
+func (s *StringSlice) Value() []string {
+	return s.values
+}
